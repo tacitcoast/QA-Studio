@@ -4,7 +4,7 @@
 QA Course
 
 ## JSON
-- [JSON CV](https://gist.github.com/tacitcoast/1093cadadda394e6ced663699c46d138#file-resume-json)
+- [JSON CV](https://github.com/tacitcoast/QA-Studio/blob/main/JSON/resume.json)
 
 ## Website
 - Html + css + js
