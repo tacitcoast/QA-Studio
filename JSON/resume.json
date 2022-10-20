@@ -1,0 +1,172 @@
+{
+    "meta": {
+      "theme": "elegant"
+    },
+    "basics": {
+      "name": "Anna Malinovskaia",
+      "label": "Quality Assurance engineer",
+      "image": "https://avatars.githubusercontent.com/u/44261093?v=4",
+      "summary": "🖐️ I'm a Talent Sourcer, Professional Google searcher and a future QA. My job is to research different sources and find people with whom we can collaborate. I believe that programming is already part of every job, so I also use Python in my work and I'm learning Testing. I like to train others and create something new, so if you have any ideas for a new project that I could help with in my free time, please write to me.",
+      "website": "https://t.me/anmalinovskaia",
+      "email": "tacitcoast@gmail.com",
+      "location": {
+        "city": "Antalya",
+        "countryCode": "TR"
+      },
+      "profiles": [
+        {
+          "username": "anmalinovskaia",
+          "url": "https://www.linkedin.com/in/anmalinovskaia",
+          "network": "linkedin"
+        },
+         {
+          "url": "https://github.com/tacitcoast",
+          "username": "tacitcoast",
+          "network": "github"
+        },
+        {
+          "url": "https://t.me/anmalinovskaia",
+          "username": "anmalinovskaia",
+          "network": "telegram"
+        },
+        {
+          "username": "tacitcoast",
+          "url": "https://twitter.com/tacitcoast",
+          "network": "twitter"
+        }
+      ]
+    },
+    "education": [
+       {
+         "endDate": "2023-02-31",
+         "startDate": "2022-10-01",
+         "area": "Quality Assurance",
+         "institution": "QA Studio"
+       },
+       {
+         "endDate": "2021-11-12",
+         "startDate": "2021-05-10",
+         "area": "Python Development",
+         "institution": "OZON Moscow"
+       },
+      {
+        "endDate": "2014-06-12",
+        "startDate": "2011-02-12",
+        "area": "Tourism Business Management",
+        "studyType": "Specialist",
+        "institution": "Saint Petersburg State University of Finance and Economics"
+      }
+    ],
+    "skills": [
+      {
+        "keywords": [
+          "Postman",
+          "Cypress",
+          "Git",
+          "HTTP / SOAP",
+          "SQL",
+          "Chrome DevTools / Charles",
+          "REST / JSON"
+        ],
+        "level": "Senior",
+        "name": "QA"
+      },
+      {
+        "keywords": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "level": "Senior",
+        "name": "Frontend"
+      },
+      {
+        "keywords": ["Python"],
+        "level": "Senior",
+        "name": "Backend"
+      },
+      {
+        "keywords": ["CI/CD", "Docker"],
+        "level": "Senior",
+        "name": "DevOps"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Member of the election commission with the right of advisory vote",
+        "awarder": "Protection of fair elections"
+      }
+    ],
+    "work": [
+      {
+        "summary": "Search and hiring of high-level IT specialists: DevOps Cloud, QA Automation, Python for relocation. Help with relocation. Creating and conducting training sessions on Sourcing for colleagues. Creating a bot for the recruiters department in telegram (@littlehrthings_bot). Active participation and development of the Cloud (Azure, AWS, GCP) community. launching new projects for external and internal audiences (articles, YouTube videos, podcasts).",
+        "website": "https://www.epam.com/",
+        "name": "EPAM",
+        "location": "Turkey",
+        "position": "Senior Talent Acquisition Specialist",
+        "startDate": "2018-10-18",
+        "highlights": ["Research / Strategic Sourcing / Hiring", "Mentoring", "Communication", "Employee Learning & Development / Training", "Python"]
+      },
+      {
+        "summary": "Mass search (various resources: job sites, social networks, internal database of candidates, etc.). Scheduling of interviews, conducting interviews, including mass interviews. Creating and posting vacancies on external job sites and social media channels. Participation in organizing and conducting evaluations for candidates, training and adapting new employees, and helping to develop a mentoring culture. Formation of the company's HR brand.",
+        "website": "https://www.avito.ru/",
+        "name": "Avito",
+        "location": "Saint-Petersburg",
+        "position": "Recruiter",
+        "startDate": "2018-08-01",
+        "endDate": "2017-02-01",
+        "highlights": [
+          "Recruiting / Interviewing",
+          "Onboarding / Adaptation",
+          "Employer Branding"
+        ]
+      },
+      {
+        "highlights": [
+          "Human Resources (HR)",
+          "Document Management",
+          "Onboarding",
+          "Staff Coordination",
+          "Marketing"
+        ],
+        "summary": "Assistance to the HR department in the selection. Organization of workplaces and entry into the company. Creating and maintaining a database of employees. Writing articles for the corporate forum. Organization of employee training. Assistance in maintaining personnel records, maintaining a report card of employees. Maintaining the accounting documentation of the sales department. Collecting information from the advertising department for invoicing and closing documents.",
+        "website": "https://embria.com/",
+        "pinned": true,
+        "name": "Embria",
+        "position": "Operations Coordinator & HR",
+        "startDate": "2016-12-01",
+        "endDate": "2016-06-01"
+      },
+      {
+        "highlights": [
+          "Employer Branding",
+          "Human Resources (HR)",
+          "Onboarding",
+          "Marketing"
+        ],
+        "summary": "Administrative support for office employees. Partial management of the KDP. Formation and maintenance of a database on the composition of office employees, accounting support. Working with the HR department. Implementation and supervision of the corporate English language school. Assistance in development, writing articles for the corporate magazine of the company. Organization and holding of all corporate events and holidays. Organizing the merger of two offices in St. Petersburg and moving.",
+        "website": "https://www.socialquantum.com/",
+        "name": "Social Quantum Development",
+        "position": "Administrative manager (gamedev)",
+        "startDate": "2016-01-01",
+        "endDate": "2014-06-01"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Testing"
+      },
+      {
+        "name": "Teach"
+      },
+      {
+        "name": "Reading / Writing"
+      },
+      {
+        "name": "Cinema"
+      },
+      {
+        "name": "Open Source"
+      }
+    ]
+  }
