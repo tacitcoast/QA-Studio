@@ -1,7 +1,7 @@
-# QA-Studio
+# 🧡 My Projects in QA Studio training
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-My Projects in QA Studio training
+QA Course
 
 ## Website
 - Html + css + js
@@ -20,6 +20,9 @@ My Projects in QA Studio training
 
 ## Part 5
 - Jmeter
+
+## QA Studio
+https://qa.studio/
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tacitcoast" alt="tacitcoast" />
