@@ -10,7 +10,9 @@ QA Course
 - [Сheck list Portfolio](https://miro.com/welcomeonboard/cVVvYU5WaXRHeU5zdWFQNDlMaFRXMkNDZUJDZmR0dm5rZGNZZEJqYnRZV05lcTVQdnJKOERDSHRQSG5SdmFubXwzNDU4NzY0NTI5NDQ0Mjk2OTI5fDI=?share_link_id=34576018944)
 
 ## Website
-- Html + css + js
+Site #1
+- [Repository (Html + css + js)](https://github.com/tacitcoast/tacitcoast.github.io)
+- [Site](https://tacitcoast.github.io/)
 
 ## Telegram bot
 - Python
