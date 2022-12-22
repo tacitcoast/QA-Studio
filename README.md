@@ -11,7 +11,7 @@ QA Course
 
 ## Website
 Site #1
-- [Repository (Html + css + js)](https://github.com/tacitcoast/tacitcoast.github.io)
+- [Repository (HTML + CSS + JS)](https://github.com/tacitcoast/tacitcoast.github.io)
 - [Site](https://tacitcoast.github.io/)
 
 ## Telegram bot
