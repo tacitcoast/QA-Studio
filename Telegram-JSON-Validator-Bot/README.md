@@ -1,8 +1,6 @@
-# 🦄 My business card bot
+# 🐬 My json validator bot
 
-[Код для бота](https://github.com/tacitcoast/Telegram-Bot-Portfolio/blob/main/bot.py)
-
-[Ссылка на бота](https://t.me/qa_delaware_bot) - *может быть приостановлен*
+[Код для бота](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-JSON-Validator-Bot/json_bot.py)
 
 ## Как создать бот
 - Создай своего бота Telegram через бот [BotFather](https://t.me/BotFather)
