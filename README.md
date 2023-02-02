@@ -17,6 +17,7 @@ Site #1
 ## Telegram bot
 - [Business card (Python)](https://github.com/tacitcoast/Telegram-Bot-Portfolio/blob/main/README.md)
 - [JSON validator (Python)](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-JSON-Validator-Bot/README.md)
+- [Credit card (Python)](https://github.com/tacitcoast/QA-Studio/tree/main/Telegram-Test-Credit-Card-Bot)
 
 ## Game
 - JavaScript
