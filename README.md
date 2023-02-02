@@ -15,7 +15,7 @@ Site #1
 - [Site](https://tacitcoast.github.io/)
 
 ## Telegram bot
-- Python
+- [Bot business card (Python)](https://github.com/tacitcoast/Telegram-Bot-Portfolio/blob/main/README.md)
 
 ## Game
 - JavaScript
