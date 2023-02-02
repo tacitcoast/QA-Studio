@@ -15,7 +15,8 @@ Site #1
 - [Site](https://tacitcoast.github.io/)
 
 ## Telegram bot
-- [Bot business card (Python)](https://github.com/tacitcoast/Telegram-Bot-Portfolio/blob/main/README.md)
+- [Business card (Python)](https://github.com/tacitcoast/Telegram-Bot-Portfolio/blob/main/README.md)
+- [JSON validator (Python)](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-JSON-Validator-Bot/README.md)
 
 ## Game
 - JavaScript
