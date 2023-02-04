@@ -2,9 +2,11 @@
 
 Бот валидатор + бьютифаер JSON.
 
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
 Этот бот принимает на входе JSON в любом виде, а в ответ присылает или красивый вид или информацию, где есть ошибка в структуре JSON.
 
-[Код для бота](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-JSON-Validator-Bot/json_bot.py)
+- [Код для бота](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-JSON-Validator-Bot/json_bot.py)
 
 ## Как создать бот
 - Создай своего бота Telegram через бот [BotFather](https://t.me/BotFather)
