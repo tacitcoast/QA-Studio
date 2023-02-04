@@ -63,4 +63,5 @@
 
 ____
 
-![Большая шпаргалка по всем локаторам](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4fa962f-3bcd-4438-a41e-0e68e284401f/1269-Locators_table_1_0_2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230204%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230204T135849Z&X-Amz-Expires=86400&X-Amz-Signature=9733231073942ca1711469fe8ec506ac67a5880410ffbf20a3659f8a10558b1c&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%221269-Locators_table_1_0_2.pdf%22&x-id=GetObject](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a4fa962f-3bcd-4438-a41e-0e68e284401f/1269-Locators_table_1_0_2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230204%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230204T142127Z&X-Amz-Expires=86400&X-Amz-Signature=b9ec7a7a4abb3cda7c3bc694933bbd0163c9a616c67e9ff68debdf7281a18339&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%221269-Locators_table_1_0_2.pdf%22&x-id=GetObject "Орк")
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+
