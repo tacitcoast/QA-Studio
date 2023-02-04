@@ -1,6 +1,8 @@
 # 🐥 My generating test data bot
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![Profile views](https://gpvc.arturio.dev/tacitcoast)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
 
 [Код для бота](https://github.com/tacitcoast/QA-Studio/blob/main/Telegram-Generating-Test-Data-Bot/test_users_bot.py)
 
