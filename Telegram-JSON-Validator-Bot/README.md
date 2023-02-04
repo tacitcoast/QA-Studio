@@ -3,6 +3,8 @@
 Бот валидатор + бьютифаер JSON.
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+![Profile views](https://gpvc.arturio.dev/tacitcoast)
+[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
 
 Этот бот принимает на входе JSON в любом виде, а в ответ присылает или красивый вид или информацию, где есть ошибка в структуре JSON.
 
