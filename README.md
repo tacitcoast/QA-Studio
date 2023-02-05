@@ -33,7 +33,7 @@ Site #1
 - Python + Requests + Pytest
 
 ## Load testing
-- [Jmeter]()
+- [Jmeter](https://github.com/tacitcoast/QA-Studio/tree/main/JMeter)
 
 ## QA Studio
 https://qa.studio/
