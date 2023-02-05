@@ -1,5 +1,5 @@
 ## 🐱 JMeter
-Нагрузочные тесты для двух эндпоинтов в Jmeter
+[Нагрузочные тесты для двух эндпоинтов в Jmeter](https://github.com/tacitcoast/QA-Studio/blob/main/JMeter/JMeter.jmx)
 
 - Авторизация /users/obtain-token
 - Создание водителя /insured_objects/drivers
