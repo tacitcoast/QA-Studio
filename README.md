@@ -28,7 +28,7 @@ Site #1
 
 ## Autotests
 - Postman
-- [JS Cypress](https://github.com/tacitcoast/QA-Studio/blob/main/Cypress.JS/README.md)
+- [JS Cypress](https://github.com/tacitcoast/QA-Studio/tree/main/Cypress.JS)
 - Python + Selenium
 - Python + Requests + Pytest
 
