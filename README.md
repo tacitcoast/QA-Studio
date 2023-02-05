@@ -32,8 +32,8 @@ Site #1
 - Python + Selenium
 - Python + Requests + Pytest
 
-## Part 5
-- Jmeter
+## Load testing
+- [Jmeter]()
 
 ## QA Studio
 https://qa.studio/
