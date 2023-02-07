@@ -31,7 +31,7 @@ Site #1
 - Postman
 - [JS Cypress](https://github.com/tacitcoast/QA-Studio/tree/main/Cypress.JS)
 - Python + Selenium
-- Python + Requests + Pytest
+- [Python + Requests + Pytest](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Request-Pytesr)
 
 ## Load testing
 - [Jmeter](https://github.com/tacitcoast/QA-Studio/tree/main/JMeter)
