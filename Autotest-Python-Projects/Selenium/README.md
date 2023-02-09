@@ -23,6 +23,10 @@
     - Находим атрибут нужного класса, без сообщения об ошибки
     - Нажимаем кнопку отправить, не заполняя email
     - Проверяем, что трибут класса сообщает об ошибке
+- Allure: 
+
+<img src="https://user-images.githubusercontent.com/44261093/217888108-8fbffa48-1b24-45aa-83af-672bfe2db37b.jpg" width="300"> <img src="https://user-images.githubusercontent.com/44261093/217886487-470e3d9c-3ac2-4019-ae0c-6d698b91800f.jpg" width="450">
+
 
 ## Сайт для покупки мебели
 Сайт: https://test.qa.studio
@@ -41,3 +45,6 @@
 Проект: [папка проекта](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Selenium/QAStudio-Website), [test case #1](https://github.com/tacitcoast/QA-Studio/blob/main/Autotest-Python-Projects/Selenium/QAStudio-Website/tests/test_first.py), [test case #2](https://github.com/tacitcoast/QA-Studio/blob/main/Autotest-Python-Projects/Selenium/QAStudio-Website/tests/test_shop.py) [отчёт allure](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Selenium/QAStudio-Website/my_allure_results)
 - Test case #1: Smoke test
 - Test case #2: Проверка покупки
+- Allure: 
+
+<img src="https://user-images.githubusercontent.com/44261093/217889087-5a0a7fe4-666e-4391-87b3-e5c7b08936cd.jpg" width="300"> <img src="https://user-images.githubusercontent.com/44261093/217889100-6208f671-289e-412d-900b-c4c73f2280bf.jpg" width="380">
