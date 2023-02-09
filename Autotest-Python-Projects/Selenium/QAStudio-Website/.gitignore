@@ -1,0 +1,8 @@
+env
+__pycache__
+.vscode
+.idea
+.pytest_cache
+my_allure_results
+my_allure_report
+doc
