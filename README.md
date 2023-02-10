@@ -8,7 +8,7 @@ QA Course
 - [JSON CV](https://github.com/tacitcoast/QA-Studio/blob/main/JSON/resume.json)
 
 ## CI/CD
-- Настроеный ci/cd в github + telegram
+- [Настроеный ci/cd: github + telegram](https://github.com/tacitcoast/QA-Studio/blob/main/CICD/README.md)
 
 ## Сheck list
 - [Сheck list Portfolio](https://miro.com/welcomeonboard/cVVvYU5WaXRHeU5zdWFQNDlMaFRXMkNDZUJDZmR0dm5rZGNZZEJqYnRZV05lcTVQdnJKOERDSHRQSG5SdmFubXwzNDU4NzY0NTI5NDQ0Mjk2OTI5fDI=?share_link_id=34576018944)
