@@ -30,7 +30,7 @@ Site #1
 ## Autotests
 - [JS Postman](https://github.com/tacitcoast/QA-Studio/tree/main/Postman)
 - [JS Cypress](https://github.com/tacitcoast/QA-Studio/tree/main/Cypress.JS)
-- [Python + Selenium](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Selenium)
+- [Python + Selenium + Allure](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Selenium)
 - [Python + Requests + Pytest](https://github.com/tacitcoast/QA-Studio/tree/main/Autotest-Python-Projects/Request-Pytesr)
 
 ## Load testing
