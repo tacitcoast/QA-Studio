@@ -1,0 +1,303 @@
+{
+	"info": {
+		"_postman_id": "1e15351e-97f0-4f70-9e24-bc8a5bdf02ab",
+		"name": "Timetta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24101607"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "external",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "all offline_access",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "{{userEmail}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{userPassword}}",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://auth.timetta.com/connect/token",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "типы оплаты",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"@odata.context\": \"https://api.timetta.com/odata/$metadata#ProjectBillingTypes\",\n  \"value\": [\n    {\n      \"code\": \"NonBillable\",\n      \"name\": \"Non-billable\",\n      \"id\": \"4d1a525f-3abc-4871-a64a-349c1dd3cabf\",\n      \"created\": \"2022-07-05T08:14:00.543692Z\",\n      \"modified\": \"2022-09-03T18:26:59.361378Z\",\n      \"isActive\": true\n    },\n    {\n      \"code\": \"TM\",\n      \"name\": \"Time and material\",\n      \"id\": \"584dddc1-94df-43b2-b3f3-372c02fcb016\",\n      \"created\": \"2022-07-05T08:14:00.543703Z\",\n      \"modified\": \"2022-09-03T18:26:59.361378Z\",\n      \"isActive\": true\n    },\n    {\n      \"code\": \"FixedBid\",\n      \"name\": \"Fixed bid\",\n      \"id\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\n      \"created\": \"2022-07-05T08:14:00.543706Z\",\n      \"modified\": \"2022-09-03T18:26:59.361378Z\",\n      \"isActive\": true\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.timetta.com/odata/ProjectBillingTypes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"ProjectBillingTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Малиновская Анна\",\n    \"billingTypeId\": \"e87e0e6b-c034-45ac-8b74-bd0256f3f535\",\n    \"managerId\": \"bcd753cc-0b80-47ae-a471-6ff7f06010e1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.timetta.com/odata/Projects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"Projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "изменение описания (рандомное имя, менеджер, компания)",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"function makeid(length) {",
+							"    var result           = '';",
+							"    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';",
+							"    var charactersLength = characters.length;",
+							"    for ( var i = 0; i < length; i++ ) {",
+							"      result += characters.charAt(Math.floor(Math.random() * ",
+							" charactersLength));",
+							"   }",
+							"   return result;",
+							"}",
+							"",
+							"var nameid = makeid(5);",
+							"",
+							"pm.collectionVariables.set(\"random_name\", nameid);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.timetta.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en-US;q=0.9,en;q=0.8,ru-RU;q=0.7"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjY5MTIzMjUsImV4cCI6MTY2NjkxNTkyNSwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6IndlYl9hcHAiLCJzdWIiOiJOZXN0ZXJvdkFAdGVzdC10YXNrLnJ1IiwiYXV0aF90aW1lIjoxNjY2OTEyMzI0LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiLQkNC70LXQutGB0LDQvdC00YAg0J3QtdGB0YLQtdGA0L7QsiIsInRlbmFudCI6InRlc3QtdGFzay5ydSIsImp0aSI6IjU4Mjg2QTlGNzUyRDY1QUE0NDc5MzcxNUY1REJGMDhFIiwic2lkIjoiRDVGODlEMjM0QUU1MzIwQkZCRTNDOTVFQTgwODhDRDUiLCJpYXQiOjE2NjY5MTIzMjUsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJhbGwiXSwiYW1yIjpbInB3ZCJdfQ.wtUCullJQ86ycU54U1Ze4RvPS2wDl1esj4U9JFf1yKYvXofP4aSlJdvfwhGFcSjSgE6jwrARGBTU9yoHXGG8rC6z7xlOcgvHyyEA2TrADGsJRCIH2GFhJRI1I2QgHqDimrQnukKVNwSXYJKgwALhuCa1Ok1E3HucjD8n3y5dUJY1yi4umwn1BzZTACG1g7ruW4K2HqQ_N6B6FcdQcoLZgk1veRqRuVWCOjv9VDUalLNfjcNv499jUj-u_5q-Eb6OMDiCk-ZcOZmubBHEiKxPYQb4pet3e2Zm1AtOF8RFPtgUkKDGEzNdV8neWfpO1udqePa8pfFo7WMLgB7ebF7_Jg"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "dnt",
+						"value": "1"
+					},
+					{
+						"key": "ngsw-bypass",
+						"value": "true"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.timetta.com"
+					},
+					{
+						"key": "referer",
+						"value": "https://app.timetta.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"106\", \"Google Chrome\";v=\"106\", \"Not;A=Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"f2412a48-c0f1-4893-bb3c-823277079bde\",\"name\":\"{{random_name}}\",\"code\":null,\"stateId\":\"9752fc91-714a-414f-9c03-8a3a1d6cce06\",\"managerId\":\"14ef4f7f-05ae-4cd1-b6da-a3ad83db2c26\",\"description\":null,\"startDate\":null,\"endDate\":null,\"organizationId\":\"76797ca0-dfdc-4138-967a-73eccfb9341c\",\"externalUrl\":null,\"allowTimeEntry\":false,\"skipManagerApprove\":false,\"billingTypeId\":\"e87e0e6b-c034-45ac-8b74-bd0256f3f535\"\n}"
+				},
+				"url": {
+					"raw": "https://api.timetta.com/odata/Projects(f2412a48-c0f1-4893-bb3c-823277079bde)",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"Projects(f2412a48-c0f1-4893-bb3c-823277079bde)"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "userEmail",
+			"value": "NesterovA@test-task.ru",
+			"type": "string"
+		},
+		{
+			"key": "userPassword",
+			"value": "gG9NfM",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjY5MTc3NjMsImV4cCI6MTY2NjkyMTM2MywiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2NjkxNzc2MywiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiI0ODA3RDBDRkJERTg2NUEzOTY5MjkzNUEzQjU0ODQ0RSIsImlhdCI6MTY2NjkxNzc2Mywic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.Kwn4kv1d-6m1lqj4Rm5vBK8rujjddQuhaho2QmJ3PgKuEpQVtXNMSktmvUyVuIorDYZgLRiyuWnjcQQgU_rJCmrAnh6sERAH4zuZf6YO-a-zUzGwlPLDuKjmvtbRpYltp9URBsKHegp9D-23qTVkxOcmPrnfQupqtNp90-84V3XtHe41vj2Ffx1WS-pp4sOYkkJNu2or7-Wmn42tajwILDCSBEn7W2KEabfcRDWJ9q-lJiyvM6BWdB0p0C_JUnr6rH7ATeZDKJLBCyJLKRBDJhy9gIoDN7wB_lELbRthNlHMrWtiSdzNKhqZnz3vYismtj6KsnOBICCi_jNZ4MJ3og",
+			"type": "string"
+		},
+		{
+			"key": "random_name",
+			"value": "J1Kdb",
+			"type": "string"
+		}
+	]
+}
