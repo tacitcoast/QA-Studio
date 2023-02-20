@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "e47e8d6a-a906-40ba-ab2d-43752639b46d",
+		"name": "HeadHunter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24101607"
+	},
+	"item": [
+		{
+			"name": "Поиск работодателя",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"open_vacancies\");",
+							"});",
+							"",
+							"pm.test(\"Сравнение поля id\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.items[0].id).to.eql(\"5008932\");",
+							"});",
+							"",
+							"pm.test(\"Тест на скорость\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(504);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/employers?per_page=20&page=20",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employers"
+					],
+					"query": [
+						{
+							"key": "area",
+							"value": "3",
+							"description": "поиск по городу / стране",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "company",
+							"description": "\"id\": \"company\",\n\"name\": \"Прямой работодатель\"\n\"id\": \"agency\",\n\"name\": \"Кадровое агентство\"\n\"id\": \"project_director\",\n\"name\": \"Руководитель проекта\"\n\"id\": \"private_recruiter\",\n\"name\": \"Частный рекрутер\"",
+							"disabled": true
+						},
+						{
+							"key": "only_with_vacancies",
+							"value": "true",
+							"description": "Возвращать только работодателей у которых есть в данный момент открытые вакансии (true) или же всех (false)",
+							"disabled": true
+						},
+						{
+							"key": "host",
+							"value": "rabota.by",
+							"description": "Default: \"hh.ru\"\nEnum: \"hh.ru\" \"grc.ua\" \"rabota.by\" \"hh1.az\" \"hh.uz\" \"hh.kz\" \"headhunter.ge\" \"headhunter.kg\"\nExample: host=hh.ru",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "такси",
+							"disabled": true
+						},
+						{
+							"key": "per_page",
+							"value": "20"
+						},
+						{
+							"key": "page",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Информация о работодателе",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"open_vacancies\");",
+							"});",
+							"",
+							"pm.test(\"Сравнение поля id\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.items[0].id).to.eql(\"6017235\");",
+							"});",
+							"",
+							"pm.test(\"Тест на скорость\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(504);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest(\"https://api.hh.ru/employers?text=яндекс+практикум\", function (err, response) {",
+							"var yandex_id = response.json().items[0].id;",
+							"pm.collectionVariables.set(\"company_id\", yandex_id);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ACCESS_TOKEN",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/employers/{{company_id}}",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"employers",
+						"{{company_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ключевые навыки",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/suggests/skill_set?text=Тестирование пользовательского интерфейса",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"suggests",
+						"skill_set"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Тестирование пользовательского интерфейса"
+						},
+						{
+							"key": "text",
+							"value": "работа",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Список станций метро в указанном городе",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/metro/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"metro",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Информация о компании QA Studio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/employers/6017235",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"employers",
+						"6017235"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Список всех языков",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=r2t5uvjq435r4q7ib3vtdjq",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.hh.ru/languages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "name_company",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "company_id",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
