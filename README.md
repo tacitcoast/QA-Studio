@@ -36,8 +36,6 @@ Site #1
 ## Load testing
 - [Jmeter](https://github.com/tacitcoast/QA-Studio/tree/main/JMeter)
 
-## QA Studio
-https://qa.studio/
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tacitcoast" alt="tacitcoast" />
