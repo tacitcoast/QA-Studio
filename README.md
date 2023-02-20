@@ -16,7 +16,6 @@ Site #1
 - [Site](https://tacitcoast.github.io/)
 
 ## Postman
-Коллекции:
 - [HeadHunter](https://github.com/tacitcoast/QA-Studio/blob/main/Postman/HeadHunter.postman_collection.json)
 - [StarWars](https://github.com/tacitcoast/QA-Studio/blob/main/Postman/Starwars.postman_collection.json)
 - [Habr](https://github.com/tacitcoast/QA-Studio/blob/main/Postman/Habr.postman_collection.json)
