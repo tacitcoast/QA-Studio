@@ -10,16 +10,13 @@ QA Course
 ## Сheck list + Test Сases
 - [Portfolio in MIRO](https://miro.com/app/board/uXjVPBkh9Mw=/?share_link_id=812379304899)
 
-## Bug Report
-- [Template](https://docs.google.com/document/d/1NrNA62BaR3kO_Ko41JCIXnr6Ybj2oFodKCdN8qzFB6E/edit?usp=sharing)
-
 ## SQL
-- [Request examples]()
+- [Request examples](https://github.com/tacitcoast/QA-Studio/tree/main/SQL)
 
 ## Website
 Site #1
 - [Repository (HTML + CSS + JS)](https://github.com/tacitcoast/tacitcoast.github.io)
-- [Site](https://tacitcoast.github.io/)
+- [Link to the site](https://tacitcoast.github.io/)
 
 ## Postman
 - [HeadHunter](https://github.com/tacitcoast/QA-Studio/blob/main/Postman/HeadHunter.postman_collection.json)
@@ -46,6 +43,8 @@ Site #1
 ## Load testing
 - [Jmeter](https://github.com/tacitcoast/QA-Studio/tree/main/JMeter)
 
+## Bug Report
+- [Template](https://docs.google.com/document/d/1NrNA62BaR3kO_Ko41JCIXnr6Ybj2oFodKCdN8qzFB6E/edit?usp=sharing)
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tacitcoast" alt="tacitcoast" />
