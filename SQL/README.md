@@ -48,3 +48,20 @@
 11. Вывод названия должностей, у которых зарплата между 1500 и 2200.
 
     <img width="600" alt="image (13)" src="https://user-images.githubusercontent.com/44261093/220360715-fb48f9b0-4936-478b-b185-d7f2ee56e230.png">
+
+12. Вывод списка уникальных городов, где в названии есть буква k.
+
+    <img width="600" alt="image (14)" src="https://user-images.githubusercontent.com/44261093/220384541-e18f7152-287e-43aa-9466-8140a54ddae4.png">
+
+13. Вывод Имени и Фамилиии каждого сотрудника вместе с их Должностью.
+
+    <img width="600" alt="image (15)" src="https://user-images.githubusercontent.com/44261093/220384742-42ceaf02-7af9-4655-8a4d-129890db64aa.png">
+
+14. Вывод количества товаров, у которых нет отзывов.
+
+    <img width="600" alt="image (16)" src="https://user-images.githubusercontent.com/44261093/220385053-26b16395-b7a1-4116-9f22-aa92809364b8.png">
+    <img width="600" alt="image (17)" src="https://user-images.githubusercontent.com/44261093/220385084-e1dc62d9-f053-4b39-bfb6-8417b61b95a7.png">
+
+15. Вывод количества заказов, для которых Налог между 2 и 5, включая границы (то есть 2 и 5 включительно).
+
+    <img width="600" alt="image (18)" src="https://user-images.githubusercontent.com/44261093/220385203-05a6ae5b-4e7a-424a-8f45-9829cdabde05.png">
