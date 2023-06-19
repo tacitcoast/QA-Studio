@@ -5,7 +5,7 @@
 QA Course
 
 ## JSON
-- [JSON CV](https://github.com/tacitcoast/QA-Studio/blob/main/JSON/resume.json)
+- [JSON CV](https://github.com/tacitcoast/QA-Studio/blob/main/JSON/README.md)
 
 ## Сheck list + Test Сases
 - [Portfolio in MIRO](https://miro.com/app/board/uXjVPBkh9Mw=/?share_link_id=812379304899)
